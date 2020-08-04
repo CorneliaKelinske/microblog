@@ -1,0 +1,3 @@
+venv\Scripts\activate
+$env:FLASK_APP = "file_name.py"
+flask run

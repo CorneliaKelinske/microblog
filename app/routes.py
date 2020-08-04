@@ -5,3 +5,6 @@ from app import app
 def index():
     return "Hello World!"
 
+@app.route('/connie')
+def connie():
+    return "Hello Connie"
