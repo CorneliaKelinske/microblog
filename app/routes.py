@@ -3,8 +3,13 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    return "Hello World!"
+    user = {'username' : 'Connie'}
+    return '''
+<html>
+    <head>
+        <title>Home Page - Microblog</title>
+    <body>
+        <h1>Hello, ''' + user['username'] + '''!</h1>
+    </body>
+</html>'''
 
-@app.route('/connie')
-def connie():
-    return "Hello Connie"
