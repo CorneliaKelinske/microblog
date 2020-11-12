@@ -2,4 +2,12 @@ venv\Scripts\activate
 $env:FLASK_APP = "file_name.py"
 flask run
 flask shell
+For Debugging:
 $env:FLASK_ENV = "development" 
+
+Commands for sending errors by email to gmail
+$env:MAIL_SERVER ="smtp.googlemail.com"
+$env:MAIL_PORT =587
+$env:MAIL_USE_TLS=1
+$env:MAIL_USERNAME=<your-gmail-username>
+$env:MAIL_PASSWORD=<your-gmail-password>
