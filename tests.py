@@ -25,10 +25,10 @@ class UserModelCase(unittest.TestCase):
                                          '?d=identicon&s=128'))
     def test_follow(self):
         u1 = User(username='john', email='john@example.com')
-        u2 = User(username='susan'), email='susan@example.com')
+        u2 = User(username='susan', email='susan@example.com')
         db.session.add(u1)
         db.session.add(u2)
-        db.commit()
+        db.session.commit()
         self.assertEqual(u1.followed.all(), [])
         self.assertEqual(u1.followers.all(), [])
 
@@ -36,7 +36,7 @@ class UserModelCase(unittest.TestCase):
         db.session.commit()
         self.assertTrue(u1.is_following(u2))
         self.assertEqual(u1.followed.count(), 1)
-        self.assertEqual(u.1followed.first().username, 'susan')
+        self.assertEqual(u1.followed.first().username, 'susan')
         self.assertEqual(u2.followers.count(), 1)
         self.assertEqual(u2.followers.first().username, 'john')
 
