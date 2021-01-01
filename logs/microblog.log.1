@@ -1,4 +1,4 @@
-2020-11-16 16:31:21,444 ERROR: Exception on / [GET] [in c:\users\aunty\connie_codes\first_flask_attempts\microblog\venv\lib\site-packages\flask\app.py:1892]
+2020-11-16 16:31:22,292 ERROR: Exception on /favicon.ico [GET] [in c:\users\aunty\connie_codes\first_flask_attempts\microblog\venv\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "c:\users\aunty\connie_codes\first_flask_attempts\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
     cursor, statement, parameters, context
@@ -71,3 +71,41 @@ FROM user
 WHERE user.id = ?]
 [parameters: (4,)]
 (Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-11-16 16:34:17,232 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:34:47,076 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:35:03,000 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:41:15,340 INFO: Microblog startup [in c:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:41:41,491 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:53:29,321 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:53:55,891 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-16 16:54:00,775 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-26 06:25:47,193 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-26 06:35:53,941 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-11-29 07:04:58,534 INFO: Microblog startup [in C:\Users\aunty\Connie_Codes\First_Flask_Attempts\microblog\app\__init__.py:44]
+2020-12-12 06:51:54,859 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-17 06:46:39,984 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-21 06:47:05,141 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-23 07:03:30,023 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-23 07:10:48,830 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-26 07:37:32,423 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2020-12-30 06:42:50,624 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2021-01-01 06:57:18,419 INFO: Microblog startup [in /home/corneliakelinske/connie_codes/microblog/app/__init__.py:44]
+2021-01-01 06:57:28,140 ERROR: Exception on /user/Susanne [GET] [in /home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/corneliakelinske/connie_codes/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/corneliakelinske/connie_codes/microblog/app/routes.py", line 79, in user
+    if post.has_next else None
+NameError: name 'post' is not defined
